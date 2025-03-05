@@ -1,0 +1,87 @@
+*{
+    background-color: black;
+}
+
+/* button:hover{
+    color: red;
+}
+input:focus{
+    color: blue;
+}
+/* add the content before an element */
+li::before{
+    content:"<" ;
+}
+/* add the content after an element */
+li::after{
+    content:">";
+} */
+
+/* --------------------------------------------------- */
+
+button{
+    background-color: red;
+    size: 20px;
+    color: cyan;
+    transition: all cubic-bezier(0.19, 1, 0.22, 1) 4s;
+}
+button:hover{
+    background-color: blueviolet;
+    color: black;
+}
+.box{
+    width: 200px;
+    height: 200px;
+    background-color: cadetblue;
+    /* transform: translate(100px, 100px); */
+    /* transform: rotate(50deg); */
+    /* transform: scale(1.5); */
+    transition: all cubic-bezier(0.19, 1, 0.22, 1);
+    margin: 20px;
+
+}
+
+
+.box:hover{
+    /* transform: scale(.8); */
+    transform: skew(15deg, 15deg);
+    /* border-radius: 50%; */
+}
+/* ------------------------------------------------ */
+#papa{
+    perspective: 700px;
+}
+.daba{
+    width: 200px;
+    height: 200px;
+    background-color: chartreuse;
+    transform: translate3d(10px, 20px, -390px);
+    /* imp property must important after 3d transtion use */
+    margin: 100px;
+}
+/* -------------------------------------------- */
+#box1{
+    width: 200px;
+    height: 200px;
+    background-color: coral;
+    animation: chacha 3s cubic-bezier(0.19, 1, 0.22, 1) 1s both;
+}
+/* @keyframes chacha {
+    from{
+        background-color: aquamarine;
+    }
+    to{
+        background-color: rgb(210, 173, 26);
+    }
+} */
+@keyframes chacha {
+    0%{
+        background-color: aquamarine;
+    }
+    50%{
+        background-color: rgb(210, 173, 26);
+    }
+    100%{
+        background-color: blueviolet;
+    }
+}
